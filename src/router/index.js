@@ -93,6 +93,12 @@ const routes = [
         component: () => import("../views/element-ui/Carousel.vue"),
         // component:Carousel ,
       },
+      {
+        path: "/LineBar",
+        name: "LineBar",
+        component: () => import("../views/echarts/LineBar.vue"),
+        // component:Carousel ,
+      },
     ],
   },
 
