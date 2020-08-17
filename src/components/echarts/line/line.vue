@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div id="container" class="container" ref="chart" :style="{height:height,width:width}"></div>
+    <div :id="id" class="container" ref="chart" :style="{height:height,width:width}"></div>
   </div>
 </template>
 <script>
@@ -24,6 +24,10 @@ export default {
     height:{
         type:String,
         default:"300px"
+    },
+    id:{
+      type:String,
+      default:"container",
     }
   },
   data() {
@@ -38,7 +42,8 @@ export default {
   },
   methods: {
     initCharts() {
-      let myChart = echarts.init(document.getElementById("container")); // 绘制图表
+      const {id,Xdata,dataS}=this;
+      let myChart = echarts.init(document.getElementById(id)); // 绘制图表
 
       // 　　console.log(this.$refs.chart)
       if (myChart) {
@@ -51,7 +56,7 @@ export default {
           tooltip: {},
           xAxis: {
             // data: ["衬衫", "羊毛衫", "雪纺衫", "裤子", "高跟鞋", "袜子"],
-            data: this.Xdata,
+            data:Xdata,
             axisLine: {
               lineStyle: {
                 color: "white"
@@ -70,7 +75,7 @@ export default {
               name: "销量",
               type: "bar",
               //   data: [5, 20, 36, 10, 10, 20],
-              data: this.dataS,
+              data:dataS,
               barWidth: "30%"
             }
           ]

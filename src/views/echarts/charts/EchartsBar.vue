@@ -1,7 +1,7 @@
 <template>
   <div class="PublicBox">
     <EchartsBox :title="title" ></EchartsBox>
-    <LineOne :Xdata="Xdata" :dataS="data" :height="height" :width="width" />
+    <LineOne :Xdata="Xdata" :dataS="data" :height="height" :width="width" :id="id" />
   </div>
 </template>
 <script>
@@ -15,7 +15,8 @@ export default {
       Xdata: ["衬衫A", "羊毛衫A", "雪纺衫A", "裤A子", "高跟鞋A", "袜子A"],
       data: [5, 20, 36, 10, 10, 20],
       height:"400px",
-      width:"100%"
+      width:"100%",
+      id:"containers"
     };
   },
   components: {
