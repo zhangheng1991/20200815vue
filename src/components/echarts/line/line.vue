@@ -81,6 +81,12 @@ export default {
           ]
         });
       }
+      window.addEventListener("resize", () => {
+        // const myChart = echarts.init(document.getElementById('chart-left'))
+        // const myChart1 = echarts.init(document.getElementById('chart-btm'))
+        myChart.resize();
+        // myChart1.resize()
+      });
     }
   },
   mounted() {

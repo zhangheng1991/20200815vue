@@ -94,9 +94,9 @@ const routes = [
         // component:Carousel ,
       },
       {
-        path: "/LineBar",
-        name: "LineBar",
-        component: () => import("../views/echarts/LineBar.vue"),
+        path: "/EchartsIndex",
+        name: "EchartsIndex",
+        component: () => import("../views/echarts/EchartsIndex.vue"),
         // component:Carousel ,
       },
     ],
@@ -108,9 +108,9 @@ const routes = [
     component: () => import("../views/user/Login.vue"),
   },
   {
-    path: "/LineBar",
-    name: "/LineBar",
-    component: () => import("../views/echarts/LineBar.vue"),
+    path: "/EchartsIndex",
+    name: "/EchartsIndex",
+    component: () => import("../views/echarts/EchartsIndex.vue"),
   },
 ];
 
