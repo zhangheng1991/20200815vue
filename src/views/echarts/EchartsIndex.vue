@@ -4,20 +4,31 @@
     <h1 v-show="no">no Hello!</h1>
     <div class="charts">
       <div class="charts-box">
-        <EchartsBar></EchartsBar>
-        
+        <echarts-bar></echarts-bar>
       </div>
-       <div class="charts-box">
-        
+      <div class="charts-box">
         <EchartsLine />
       </div>
-       <div class="charts-box">
-        
+      <div class="charts-box">
         <EchartsBarNew />
       </div>
       <div class="charts-box">
-        
         <ConsumptionDataAnalysis />
+      </div>
+      <div class="charts-box">
+        <FoodBeverage />
+      </div>
+      <div class="charts-box">
+        <NearlyDaysTourists />
+      </div>
+      <div class="charts-box">
+        <WordCloud />
+      </div>
+      <div class="charts-box">
+        <AnalysistouristGender />
+      </div>
+      <div class="charts-box">
+        <DataAnalysisTourists />
       </div>
     </div>
   </div>
@@ -28,9 +39,24 @@ import EchartsBar from "./charts/EchartsBar";
 import EchartsLine from "./charts/EchartsLine";
 import EchartsBarNew from "./charts/EchartsBarNew";
 import ConsumptionDataAnalysis from "./charts/ConsumptionDataAnalysis";
+import FoodBeverage from "./charts/FoodBeverage";
+import NearlyDaysTourists from "./charts/NearlyDaysTourists";
+import WordCloud from "./charts/WordCloud";
+import AnalysistouristGender from "./charts/AnalysistouristGender";
+import DataAnalysisTourists from "./charts/DataAnalysisTourists";
 export default {
   name: "LineChart",
-  components: { EchartsBar, EchartsLine,EchartsBarNew,ConsumptionDataAnalysis },
+  components: {
+    EchartsBar,
+    EchartsLine,
+    EchartsBarNew,
+    ConsumptionDataAnalysis,
+    FoodBeverage,
+    NearlyDaysTourists,
+    WordCloud,
+    AnalysistouristGender,
+    DataAnalysisTourists
+  },
   data() {
     return {
       ok: true,

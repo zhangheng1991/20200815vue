@@ -26,11 +26,9 @@ github
 账户：404455037@qq.com/zhangheng1991
 密码：ZhangH123456
 
-
 码云
-404455037@qq.com
-zhang1991
-968824
+邮箱/账户：404455037@qq.com/zhangheng1991
+密码：zhang1991
 
 
 git使用：
