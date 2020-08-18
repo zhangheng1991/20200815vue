@@ -30,6 +30,21 @@
       <div class="charts-box">
         <DataAnalysisTourists />
       </div>
+      <div class="charts-box">
+        <TouristTransaction />
+      </div>
+      <div class="charts-box">
+        <TouristTransactionVolume />
+      </div>
+      <div class="charts-box">
+        <NighttimeConsumptionBias />
+      </div>
+      <div class="charts-box">
+        <AgeDistributionVisitors />
+      </div>
+      <div class="charts-box">
+        <EachChannelNumber />
+      </div>
     </div>
   </div>
 </template>
@@ -44,6 +59,11 @@ import NearlyDaysTourists from "./charts/NearlyDaysTourists";
 import WordCloud from "./charts/WordCloud";
 import AnalysistouristGender from "./charts/AnalysistouristGender";
 import DataAnalysisTourists from "./charts/DataAnalysisTourists";
+import TouristTransaction from "./charts/TouristTransaction";
+import TouristTransactionVolume from "./charts/TouristTransactionVolume";
+import NighttimeConsumptionBias from "./charts/NighttimeConsumptionBias";
+import AgeDistributionVisitors from "./charts/AgeDistributionVisitors";
+import EachChannelNumber from "./charts/EachChannelNumber";
 export default {
   name: "LineChart",
   components: {
@@ -55,7 +75,12 @@ export default {
     NearlyDaysTourists,
     WordCloud,
     AnalysistouristGender,
-    DataAnalysisTourists
+    DataAnalysisTourists,
+    TouristTransaction,
+    TouristTransactionVolume,
+    NighttimeConsumptionBias,
+    AgeDistributionVisitors,
+    EachChannelNumber
   },
   data() {
     return {
