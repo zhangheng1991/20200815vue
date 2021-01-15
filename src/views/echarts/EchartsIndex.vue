@@ -1,54 +1,89 @@
 <template>
   <div class="public-body">
-    <h1 v-show="ok">ok Hello!</h1>
-    <h1 v-show="no">no Hello!</h1>
+    <!-- <h1 v-show="ok">ok Hello!</h1>
+    <h1 v-show="ok">okno Hello!</h1> -->
     <div class="charts">
-      <div class="charts-box">
-        <echarts-bar></echarts-bar>
-      </div>
-      <div class="charts-box">
-        <EchartsLine />
-      </div>
-      <div class="charts-box">
-        <EchartsBarNew />
-      </div>
-      <div class="charts-box">
-        <ConsumptionDataAnalysis />
-      </div>
-      <div class="charts-box">
-        <FoodBeverage />
-      </div>
-      <div class="charts-box">
-        <NearlyDaysTourists />
-      </div>
-      <div class="charts-box">
-        <WordCloud />
-      </div>
-      <div class="charts-box">
-        <AnalysistouristGender />
-      </div>
-      <div class="charts-box">
-        <DataAnalysisTourists />
-      </div>
-      <div class="charts-box">
-        <TouristTransaction />
-      </div>
-      <div class="charts-box">
-        <TouristTransactionVolume />
-      </div>
-      <div class="charts-box">
-        <NighttimeConsumptionBias />
-      </div>
-      <div class="charts-box">
-        <AgeDistributionVisitors />
-      </div>
-      <div class="charts-box">
-        <EachChannelNumber />
-      </div>
-     <div class="charts-box">
-        <HuangFeiHong />
-      </div>
       
+      <el-col :span="24">
+        <div class="charts-box">
+          <sourceOf-tourists />
+        </div>
+      </el-col>
+      <el-col :span="8">
+        <div class="charts-box">
+          <echarts-bar></echarts-bar>
+        </div>
+      </el-col>
+      <el-col :span="8">
+        <div class="charts-box">
+          <EchartsLine />
+        </div>
+      </el-col>
+      <el-col :span="8">
+        <div class="charts-box">
+          <EchartsBarNew />
+        </div>
+      </el-col>
+      <el-col :span="8">
+        <div class="charts-box">
+          <ConsumptionDataAnalysis />
+        </div>
+      </el-col>
+      <el-col :span="8">
+        <div class="charts-box">
+          <FoodBeverage />
+        </div>
+      </el-col>
+      <el-col :span="8">
+        <div class="charts-box">
+          <NearlyDaysTourists />
+        </div>
+      </el-col>
+      <el-col :span="8">
+        <div class="charts-box">
+          <WordCloud />
+        </div>
+      </el-col>
+      <el-col :span="8">
+        <div class="charts-box">
+          <AnalysistouristGender />
+        </div>
+      </el-col>
+      <el-col :span="8">
+        <div class="charts-box">
+          <DataAnalysisTourists />
+        </div>
+      </el-col>
+      <el-col :span="8">
+        <div class="charts-box">
+          <TouristTransaction />
+        </div>
+      </el-col>
+      <el-col :span="8">
+        <div class="charts-box">
+          <TouristTransactionVolume />
+        </div>
+      </el-col>
+      <el-col :span="8">
+        <div class="charts-box">
+          <NighttimeConsumptionBias />
+        </div>
+      </el-col>
+      <el-col :span="8">
+        <div class="charts-box">
+          <AgeDistributionVisitors />
+        </div>
+      </el-col>
+      <el-col :span="8">
+        <div class="charts-box">
+          <EachChannelNumber />
+        </div>
+      </el-col>
+      <el-col :span="8">
+        <div class="charts-box">
+          <HuangFeiHong />
+        </div>
+      </el-col>
     </div>
   </div>
 </template>
@@ -69,6 +104,7 @@ import NighttimeConsumptionBias from "./charts/NighttimeConsumptionBias";
 import AgeDistributionVisitors from "./charts/AgeDistributionVisitors";
 import EachChannelNumber from "./charts/EachChannelNumber";
 import HuangFeiHong from "./charts/HuangFeiHong";
+import SourceOfTourists from "./charts/SourceOfTourists";
 export default {
   name: "LineChart",
   components: {
@@ -87,13 +123,14 @@ export default {
     AgeDistributionVisitors,
     EachChannelNumber,
     HuangFeiHong,
+    SourceOfTourists,
   },
   data() {
     return {
       ok: true,
-      no: false
+      no: false,
     };
-  }
+  },
 };
 </script>
 <style lang="scss" scoped>
@@ -108,7 +145,7 @@ export default {
   overflow: hidden;
 }
 .charts-box {
-  width: 50%;
+  width: 100%;
   display: inline-block;
 }
 </style>
