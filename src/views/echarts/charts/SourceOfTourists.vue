@@ -19,7 +19,7 @@ export default {
     return {
       title: "旅游",
       id: "SourceOfTourists",
-      height: "700px",
+      height: "630px",
       ChattTitle: "",
       textFont: 14,
       geoCoordMap: {

@@ -9,77 +9,77 @@
           <sourceOf-tourists />
         </div>
       </el-col>
-      <el-col :span="8">
+      <el-col :span="span">
         <div class="charts-box">
           <echarts-bar></echarts-bar>
         </div>
       </el-col>
-      <el-col :span="8">
+      <el-col :span="span">
         <div class="charts-box">
           <EchartsLine />
         </div>
       </el-col>
-      <el-col :span="8">
+      <el-col :span="span">
         <div class="charts-box">
           <EchartsBarNew />
         </div>
       </el-col>
-      <el-col :span="8">
+      <el-col :span="span">
         <div class="charts-box">
           <ConsumptionDataAnalysis />
         </div>
       </el-col>
-      <el-col :span="8">
+      <el-col :span="span">
         <div class="charts-box">
           <FoodBeverage />
         </div>
       </el-col>
-      <el-col :span="8">
+      <el-col :span="span">
         <div class="charts-box">
           <NearlyDaysTourists />
         </div>
       </el-col>
-      <el-col :span="8">
+      <el-col :span="span">
         <div class="charts-box">
           <WordCloud />
         </div>
       </el-col>
-      <el-col :span="8">
+      <el-col :span="span">
         <div class="charts-box">
           <AnalysistouristGender />
         </div>
       </el-col>
-      <el-col :span="8">
+      <el-col :span="span">
         <div class="charts-box">
           <DataAnalysisTourists />
         </div>
       </el-col>
-      <el-col :span="8">
+      <el-col :span="span">
         <div class="charts-box">
           <TouristTransaction />
         </div>
       </el-col>
-      <el-col :span="8">
+      <el-col :span="span">
         <div class="charts-box">
           <TouristTransactionVolume />
         </div>
       </el-col>
-      <el-col :span="8">
+      <el-col :span="span">
         <div class="charts-box">
           <NighttimeConsumptionBias />
         </div>
       </el-col>
-      <el-col :span="8">
+      <el-col :span="span">
         <div class="charts-box">
           <AgeDistributionVisitors />
         </div>
       </el-col>
-      <el-col :span="8">
+      <el-col :span="span">
         <div class="charts-box">
           <EachChannelNumber />
         </div>
       </el-col>
-      <el-col :span="8">
+      <el-col :span="span">
         <div class="charts-box">
           <HuangFeiHong />
         </div>
@@ -129,6 +129,7 @@ export default {
     return {
       ok: true,
       no: false,
+      span:8
     };
   },
 };
