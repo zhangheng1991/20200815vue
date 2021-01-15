@@ -102,13 +102,14 @@ export default {
             data: []
           },
           legend: {
-            top: 45,
+            top: 0,
             left: 20,
             itemWidth: 14,
             itemHeight: 14,
             // itemGap: 343,
             // icon: 'horizontal',
-            orient: "vertical",
+            // orient: "vertical",
+            orient: "horizontal",
             textStyle: {
               show: true,
               color: "#FFFFFF",

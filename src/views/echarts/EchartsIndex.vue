@@ -45,6 +45,10 @@
       <div class="charts-box">
         <EachChannelNumber />
       </div>
+     <div class="charts-box">
+        <HuangFeiHong />
+      </div>
+      
     </div>
   </div>
 </template>
@@ -64,6 +68,7 @@ import TouristTransactionVolume from "./charts/TouristTransactionVolume";
 import NighttimeConsumptionBias from "./charts/NighttimeConsumptionBias";
 import AgeDistributionVisitors from "./charts/AgeDistributionVisitors";
 import EachChannelNumber from "./charts/EachChannelNumber";
+import HuangFeiHong from "./charts/HuangFeiHong";
 export default {
   name: "LineChart",
   components: {
@@ -80,7 +85,8 @@ export default {
     TouristTransactionVolume,
     NighttimeConsumptionBias,
     AgeDistributionVisitors,
-    EachChannelNumber
+    EachChannelNumber,
+    HuangFeiHong,
   },
   data() {
     return {

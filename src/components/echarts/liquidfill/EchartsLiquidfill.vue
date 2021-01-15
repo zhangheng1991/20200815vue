@@ -1,5 +1,5 @@
 <template>
-  <div :id="id" :style="{width:width,height:height}"></div>
+  <div :id="id" :style="{width:width,height:height}" ref="mapChart"></div>
 </template>
 <script>
 import echarts from "echarts";
@@ -37,6 +37,7 @@ export default {
     }
   },
   mounted() {
+    console.log(this,"11111",this.$refs.mapChart)
     this.initCharts();
   },
   methods: {
